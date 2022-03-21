@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>watchEditor</class>
+ <widget class="QMainWindow" name="watchEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>256</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>489</width>
+    <height>256</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>489</width>
+    <height>256</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>wifiEditor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>421</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;Bienvenue sur&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;WatchEditor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>489</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuWiFi">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="menu"/>
+    <addaction name="actionmodifier_MQTT"/>
+    <addaction name="actionmodifier_NTP"/>
+    <addaction name="actionAjouter_client_BDD"/>
+    <addaction name="actionConsole"/>
+   </widget>
+   <widget class="QMenu" name="menu_propos">
+    <property name="title">
+     <string>À propos</string>
+    </property>
+    <addaction name="action_propos"/>
+   </widget>
+   <addaction name="menuWiFi"/>
+   <addaction name="menu_propos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu">
+   <property name="text">
+    <string>Modifier Wifi</string>
+   </property>
+  </action>
+  <action name="actionmodifier_MQTT">
+   <property name="text">
+    <string>Modifier MQTT</string>
+   </property>
+  </action>
+  <action name="actionmodifier_NTP">
+   <property name="text">
+    <string>Modifier NTP</string>
+   </property>
+  </action>
+  <action name="actionAjouter_client_BDD">
+   <property name="text">
+    <string>Ajouter client BDD</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
